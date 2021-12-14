@@ -23,6 +23,7 @@ jobs:
         with:
           images: |
             ${{ env.DOCKER_REPOSITORY }}/${{ env.DOCKER_IMAGE }}
+            ghcr.io/${{ env.DOCKER_REPOSITORY }}/${{ env.DOCKER_IMAGE }}
           tags: |
             type=ref,event=branch
             type=sha
